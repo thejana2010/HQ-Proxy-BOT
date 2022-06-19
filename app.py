@@ -9,8 +9,6 @@ import json
 import asyncio
 import requests
 
-import pymongo
-
 from pyrogram.errors import UserNotParticipant
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
@@ -30,13 +28,6 @@ app = Client(
     api_hash = os.environ["API_HASH"],
     bot_token = os.environ["BOT_TOKEN"],
 )
-
-DATABASE = os.environ["DATABASE"]
-
-client = pymongo.MongoClient(DATABASE)
-db = client["Proxy_bot"]
-userdb = db["user"]
-
 
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
