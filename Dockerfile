@@ -1,7 +1,7 @@
 FROM python:3.9.10
 
-WORKDIR /app
-COPY . /app
+WORKDIR /app.py
+COPY . /app.py
  
 RUN pip install - r requirments.txt
  
