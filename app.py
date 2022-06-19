@@ -257,7 +257,7 @@ async def ads_message(_, message):
 	await app.forward_messages(
 		chat_id = message.chat.id, 
 		from_chat = -1001794627901, 
-		[29, 27]
+		message_ids = [29, 27],
 	)
 	
 app.run()
