@@ -116,7 +116,7 @@ You must,
 ※ Proxy count : `{str(len(req))}`
 ※ Lasted Updated : `{last}`
 
-**Powered by** : @szteambots """,)
+**Powered by** : @szteambots """,reply_markup = create)
     await m.delete()
     os.remove(f"SOCKS4.txt")
 
@@ -150,7 +150,7 @@ You must,
 ※ Proxy count : `{str(len(req))}`
 ※ Lasted Updated : `{last}`
 
-**Powered by** : @szteambots """,)
+**Powered by** : @szteambots """ ,reply_markup = create )
     await m.delete()
     os.remove(f"SOCKS5.txt")
 
@@ -184,7 +184,7 @@ You must,
 ※ Proxy count : `{str(len(req))}`
 ※ Lasted Updated : `{last}`
 
-**Powered by** : @szteambots """,)
+**Powered by** : @szteambots """,reply_markup = create)
     await m.delete()
     os.remove(f"http.txt")
 
