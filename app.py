@@ -44,7 +44,10 @@ start_button = InlineKeyboardMarkup(
                 [
                     InlineKeyboardButton("👥 Group", url="https://t.me/slbotzone"),
                     InlineKeyboardButton("🗣 Channel", url="https://t.me/szteambots")
-                ]
+                ],
+		[
+                    InlineKeyboardButton("➕Add to Group ➕", url="http://t.me/szproxybot?startgroup=new"),
+                ]    
             ]
 )
 
@@ -255,7 +258,7 @@ Broadcast Completed:.""")
 async def ads_message(_, message):
 	await app.forward_messages(
 		chat_id = message.chat.id, 
-		from_chat = int(-1001325914694), 
+		from_chat_id = int(-1001325914694), 
 		message_ids = 1050,
 	)
 	
