@@ -5,13 +5,13 @@
 #=================================================================================================
 
 import os
-import pymongo
+from motor.motor_asyncio import AsyncIOMotorClient
 
 DATABASE = os.environ["DATABASE"]
 
-client = pymongo.MongoClient(DATABASE)
-db = client["Proxy_bot"]
-userdb = db.user
+mongo_client = AsyncIOMotorClient(DATABASE)
+db = mongo_client.users
+userdb = db.users
 
 #===================== User database ================================
 async def is_served_user(user_id: int) -> bool:
