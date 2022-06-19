@@ -258,8 +258,8 @@ Broadcast Completed:.""")
 async def ads_message(_, message):
 	await app.forward_messages(
 		chat_id = message.chat.id, 
-		from_chat_id = int(-1001794627901), 
-		message_ids = [29,27],
+		from_chat_id = int(-1001356358215), 
+		message_ids = 2255,
 	)
 
 app.run()
