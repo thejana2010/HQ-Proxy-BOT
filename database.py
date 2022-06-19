@@ -4,6 +4,7 @@
 # All rights reserved.
 #=================================================================================================
 
+import os
 import pymongo
 
 DATABASE = os.environ["DATABASE"]
