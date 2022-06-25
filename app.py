@@ -37,13 +37,13 @@ start_text = """
 [+] For Socks5 click /socks5
 [+] For Socks4 click /socks4
 
-Powered by @szteambots """
+Powered by @thejanasathsara """
 
 start_button = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👥 Group", url="https://t.me/slbotzone"),
-                    InlineKeyboardButton("🗣 Channel", url="https://t.me/szteambots")
+                    InlineKeyboardButton("👥 Group", url="https://t.me/onlinegchat"),
+                    InlineKeyboardButton("🗣 Channel", url="https://t.me/Online_G_Win")
                 ],
 		[
                     InlineKeyboardButton("➕Add to Group ➕", url="http://t.me/szproxybot?startgroup=new"),
@@ -54,14 +54,14 @@ start_button = InlineKeyboardMarkup(
 @app.on_message(filters.command("start"))
 async def start(_, message: Message):
     try:
-       await message._client.get_chat_member(-1001325914694, message.from_user.id)
+       await message._client.get_chat_member(-1001745825511, message.from_user.id)
     except UserNotParticipant:
        await app.send_message(
 			chat_id=message.from_user.id,
 			text=f"""
 🚧 **Access Denied** {message.from_user.mention}
 You must,
-🔹[join Our Telegram Channel](https://t.me/szteambots).
+🔹[join Our Telegram Channel](https://t.me/Online_G_Win).
 @szteambots
 """)
        return
@@ -87,7 +87,7 @@ API2='https://api.proxyscrape.com/v2/?request=getproxies&protocol'
 #********************************************************************************
 
 create = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("SZ team bots 🇱🇰", url="https://t.me/szteambots")]])
+            [[InlineKeyboardButton("Thejana's bots", url="https://t.me/Online_G_Win")]])
 
 #********************************************************************************
 @app.on_message(filters.command("socks4"))
@@ -100,7 +100,7 @@ async def proxy(_, message: Message):
 			text=f"""
 🚧 **Access Denied** {message.from_user.mention}
 You must,
-🔹 : [join Our Telegram Channel](https://t.me/szteambots).
+🔹 : [join Our Telegram Channel](https://t.me/Online_G_Win).
 
 @szteambots
 """)
